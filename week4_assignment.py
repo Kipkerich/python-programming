@@ -2,11 +2,14 @@
 file =open ("new.txt", 'w')
 
 #writing on the file
-file.write("Welcome to this page, I am Jacob Korir")
+file.write("Welcome to this page")
 
 #reading the file
 
-file = open ("new.txt", 'r')
-
-print(file.read())
-
+try:
+    file = open("new.txt", 'r')
+    print(file.read())
+except:
+    print("File not found")
+finally:
+    print("Thank you")
