@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 capital_city = { "Nepal": "Kathmandu", "Italy": "Rome",
                 "England": "London"}
 
@@ -39,3 +40,22 @@ print( 49 in squares)
 for i in squares:
 
     print(squares[i])
+=======
+n = int(input('number of entries:'))
+phone_book = {}
+
+for _ in range(n):
+    entry = input('Name and phone number:').split()
+    name = entry[0]
+    phone_number = entry[1]
+    phone_book[name] = phone_number
+try:
+    while True:
+        query = input('Check for a name:')
+        if query in phone_book:
+            print(f"{query}={phone_book[query]}")
+        else:
+            print("Not found")
+except EOFError:
+    pass
+>>>>>>> 025b7dd (Practising)
